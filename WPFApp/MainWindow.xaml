@@ -1,0 +1,51 @@
+﻿<Window x:Class="DataGridBind.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="auto" Width="auto">
+    <Grid Height="auto" Width="auto" Background="#FFD1F9EE">
+        <TextBlock Height="32" HorizontalAlignment="Left" Margin="16,15,0,0" Name="textBlockHeading" Text="MovieList" VerticalAlignment="Top" Width="310" FontSize="20" FontStretch="Normal" />
+        <Grid HorizontalAlignment="Left" Height="310" VerticalAlignment="Top" Width="800">
+            <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="14,55,0,46" Name="DataGridMoveList" Width="710" ItemsSource="{Binding Path=LoadDataBinding}" CanUserResizeRows="False" CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=Id}" Header="Id" Visibility="Visible" IsReadOnly="True" />
+                    <DataGridTextColumn Binding="{Binding Path=Title}" Header="Title" Width="100" IsReadOnly="True" />
+                    <DataGridTextColumn Binding="{Binding Path=ReleaseDate}" Header="ReleaseDate" Width="100" IsReadOnly="True" />
+                    <DataGridTextColumn Binding="{Binding Path=Genre}" Header="Genre" Width="150" IsReadOnly="True" />
+                    <DataGridTextColumn Binding="{Binding Path=Price}" Header="Price" Width="100" IsReadOnly="True" />
+                    <DataGridTextColumn Binding="{Binding Path=Rating}" Header="Rating" Width="120" IsReadOnly="True" />
+
+                    <!-- Test AREA STAND CLEAR! -->
+
+                    <!-- Edit -->
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="Edit">Edit</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <!-- Delete -->
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="Delete">Delete</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <!-- Details -->
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="Details">Details</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Create" Height="25" HorizontalAlignment="Left" Margin="14,293,0,-8" Name="btnCreate" VerticalAlignment="Top" Width="100" Click="Create" />
+            <Button Content="Load Data" Height="25" HorizontalAlignment="Left" Margin="602,285,0,0" Name="btnloaddata" VerticalAlignment="Top" Width="100" Click="btnloaddata_Click" />
+        </Grid>
+    </Grid>
+</Window>
+   
