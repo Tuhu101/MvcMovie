@@ -1,5 +1,5 @@
-﻿<Window x:Class="DataGridBind.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="auto" Width="auto">
-    <Grid Height="auto" Width="auto" Background="#FFD1F9EE">
+﻿<Window x:Class="DataGridBind.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="362.882" Width="auto">
+    <Grid Width="auto" Background="#FFD1F9EE" Margin="0,0,0,2">
         <TextBlock Height="32" HorizontalAlignment="Left" Margin="16,15,0,0" Name="textBlockHeading" Text="MovieList" VerticalAlignment="Top" Width="310" FontSize="20" FontStretch="Normal" />
         <Grid HorizontalAlignment="Left" Height="310" VerticalAlignment="Top" Width="800">
             <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="14,55,0,46" Name="DataGridMoveList" Width="710" ItemsSource="{Binding Path=LoadDataBinding}" CanUserResizeRows="False" CanUserAddRows="False">
