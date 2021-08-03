@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcMovie.Models
 {
+    // Det her er, hvor jeg specifissere/sætter begrænsninger på mine colums i databasen i Visual Studio. //
     public class Movie
     {
         public int Id { get; set; }

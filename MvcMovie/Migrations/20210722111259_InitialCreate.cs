@@ -5,6 +5,7 @@ namespace MvcMovie.Migrations
 {
     public partial class InitialCreate : Migration
     {
+        // Det her er hvor jeg oprettede en SQL Server/Database i selve Visual Studio inden jeg fik adgang til en VM maskine. //
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(

@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using MvcMovie.Data;
-using System;
+﻿using System;
 using System.Linq;
+using MvcMovie.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MvcMovie.Models
 {
+    // Det her er hvor jeg kan seed min database med noget fast data. // 
     public static class SeedData
     {
         public static void Initialize(IServiceProvider serviceProvider)

@@ -21,18 +21,16 @@ namespace WPFApp
     public partial class Details : Window
     {
         string BrugerID;
+        // Det her er min Connection String. //
         SqlConnection conn = new SqlConnection("Data Source=10.0.6.118;Persist Security INFO=True;User ID=Admin;Password=Passw0rd;Initial Catalog=MovieContex");
         public Details(string BrugerIdentity)
         {
             InitializeComponent();
             BrugerID = BrugerIdentity;
             Details_ID.Text = BrugerID;
-
-            MessageBox.Show(BrugerID);
-            
         }
 
-        // Tilbage. //
+        // Denne her metode sender brugeren tilbage til Mainvinduet/hovedvinduet. //
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             DataGridBind.MainWindow Win1 = new DataGridBind.MainWindow();
@@ -40,7 +38,7 @@ namespace WPFApp
             this.Close();
         }
 
-        // Edit Knap. //
+        // Denne her metode sender brugeren til Rediger vinduet. //
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             WPFApp.MovieEdit win1 = new WPFApp.MovieEdit(BrugerID);
@@ -48,10 +46,9 @@ namespace WPFApp
             this.Close();
         }
 
-        // Textbox til iD
+        // Denne her metode gør at programmet automatisk indsætter den tilhørenede data til filmens id. //
         private void Details_ID_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
             SqlConnection conn = new SqlConnection("Data Source=10.0.6.118;Persist Security INFO=True;User ID=Admin;Password=Passw0rd;Initial Catalog=MovieContex");
             conn.Open();
             

@@ -35,7 +35,6 @@ namespace MvcMovie
             }
 
             host.Run();
-
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

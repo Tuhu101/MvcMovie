@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Encodings.Web;
+using System.Collections.Generic;
+
+
 
 namespace MvcMovie.Controllers
 {
@@ -16,9 +18,7 @@ namespace MvcMovie.Controllers
             return View();
         }
 
-        // 
-        // GET: /HelloWorld/Welcome/ 
-
+        // Når man skriver /HelloWorld/Welcome/ i browseren bliver man mødt med denne metode. //
         public IActionResult Welcome(string name, int numTimes = 1)
         {
             ViewData["Message"] = "Hello " + name;
@@ -26,8 +26,5 @@ namespace MvcMovie.Controllers
 
             return View();
         }
-
-
-
     }
 }

@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="Details" Height="450" Width="800">
     <Grid>
+        <!-- Den her del er til mine Labels/Etiketer. -->
         <Label Content="Details" HorizontalAlignment="Left" Margin="94,33,0,0" VerticalAlignment="Top" FontSize="48"/>
         <Label Content="Movie" HorizontalAlignment="Left" Margin="133,107,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Title" HorizontalAlignment="Left" Margin="94,161,0,0" VerticalAlignment="Top"/>
         <Label Content="Release Date" HorizontalAlignment="Left" Margin="94,192,0,0" VerticalAlignment="Top"/>
         <Label Content="Genre" HorizontalAlignment="Left" Margin="94,223,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.689,0.202"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="94,254,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="392,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.022,-1.718"/>
+
+        <!-- Den her del er til mine Textboxe. -->
         <TextBox x:Name="Details_Title" HorizontalAlignment="Left" Height="23" Margin="202,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="Details_ReleaseDate" HorizontalAlignment="Left" Height="23" Margin="202,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="Details_Genre" HorizontalAlignment="Left" Height="23" Margin="202,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -26,7 +30,6 @@
                 <BindingGroup/>
             </TextBox.BindingGroup>
         </TextBox>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="392,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.022,-1.718"/>
 
     </Grid>
 </Window>

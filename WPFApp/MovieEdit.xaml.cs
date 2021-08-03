@@ -22,6 +22,7 @@ namespace WPFApp
     public partial class MovieEdit : Window
     {
         private string BrugerID;
+        // Det her er min Connection String. //
         SqlConnection conn = new SqlConnection("Data Source=10.0.6.118;Persist Security INFO=True;User ID=Admin;Password=Passw0rd;Initial Catalog=MovieContex");
         public MovieEdit(string BrugerIdentity)
         {
@@ -79,7 +80,7 @@ namespace WPFApp
             conn.Close();
         }
 
-        // Tilbage knap. //
+        // Denne her metode sender brugeren tilbage til Mainvinduet/hovedvinduet. //
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             DataGridBind.MainWindow Win1 = new DataGridBind.MainWindow();

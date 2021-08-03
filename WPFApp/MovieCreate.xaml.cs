@@ -21,6 +21,7 @@ namespace WPFApp
     /// </summary>
     public partial class MovieCreate : Window
     {
+        // Det her er min Connection String. //
         SqlConnection conn = new SqlConnection("Data Source=10.0.6.118;Persist Security INFO=True;User ID=Admin;Password=Passw0rd;Initial Catalog=MovieContex");
         public MovieCreate()
         {
