@@ -13,7 +13,7 @@
         <TextBox x:Name="Rediger_Genre" HorizontalAlignment="Left" Height="23" Margin="185,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="Rediger_Price" HorizontalAlignment="Left" Height="23" Margin="185,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.522,-0.088"/>
         <TextBox x:Name="Rediger_Rating" HorizontalAlignment="Left" Height="23" Margin="185,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Rediger_ID" HorizontalAlignment="Left" Height="23" Margin="455,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Rediger_ID" HorizontalAlignment="Left" Height="23" Margin="455,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="false"/>
 
         <!-- Den her del er til mine label/etiketer. -->
         <Label Content="Title" HorizontalAlignment="Left" Margin="83,104,0,0" VerticalAlignment="Top"/>

@@ -52,11 +52,26 @@ namespace WPFApp
         // Denne her metode clear alle, felterne i Rediger vinduet. //
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Rediger_Title.Clear();
-            Rediger_ReleaseDate.Clear();
-            Rediger_Genre.Clear();
-            Rediger_Price.Clear();
-            Rediger_Rating.Clear();
+            // Denne del henter information fra databasen ud fra hvilket id filmen har. //
+            conn.Open();
+            if (Rediger_ID.Text != "")
+            {
+                SqlCommand cmd1 = new SqlCommand("Select Title, ReleaseDate, Genre, Rating, Price from Movie where ID =@ID", conn);
+                // Her kan man selv vælge hvilken linje kode man vil bruge, den anden linje man kan bruge er kommenteret uds. //
+
+                // cmd1.Parameters.AddWithValue("@ID", BrugerID);
+                cmd1.Parameters.AddWithValue("@ID", int.Parse(Rediger_ID.Text));
+                SqlDataReader da = cmd1.ExecuteReader();
+                while (da.Read())
+                {
+                    Rediger_Title.Text = da.GetValue(0).ToString();
+                    Rediger_ReleaseDate.Text = da.GetValue(1).ToString();
+                    Rediger_Genre.Text = da.GetValue(2).ToString();
+                    Rediger_Price.Text = da.GetValue(4).ToString();
+                    Rediger_Rating.Text = da.GetValue(3).ToString();
+                }
+                conn.Close();
+            }
         }
 
         // Denne her metode gør at, hvis der er blevet ændret i nogle af felterne bliver dataen opdateret til den redigeret. //

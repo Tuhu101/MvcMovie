@@ -22,7 +22,7 @@
         <Label Content="Create" HorizontalAlignment="Left" Margin="96,10,0,0" VerticalAlignment="Top" FontSize="50" Width="177"/>
         
         <!-- Btn til Cancel, Ok og Tilbage-->
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="121,280,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="121,280,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Button Content="OK" HorizontalAlignment="Left" Margin="230,280,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.003,-1.458" Click="Button_Click"/>
         <Button Content="Tilbage" HorizontalAlignment="Left" Margin="346,280,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
 
