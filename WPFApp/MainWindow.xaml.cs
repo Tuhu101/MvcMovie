@@ -28,6 +28,7 @@ namespace DataGridBind
     /// </summary>  
     public partial class MainWindow : Window
     {
+        string BrugerID;
         // Det her er min Connection String. //
         SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         
@@ -43,9 +44,9 @@ namespace DataGridBind
             adp.Fill(ds, "LoadDataBinding");
             DataGridMoveList.DataContext = ds;
         }
-        
-        
-        string BrugerID;
+
+       
+
         // Her henter jeg data'en ud fra databasen og indsætter det i gridet jeg har. //
         private void btnloaddata_Click(object sender, RoutedEventArgs e)
         {
@@ -70,7 +71,7 @@ namespace DataGridBind
 
 
         // Denne her metode er til Edit knappen. //
-        void Edit(object sender, RoutedEventArgs e)
+        private void Edit(object sender, RoutedEventArgs e)
         {
             // Her finder jeg ID'et på den gældende film. // 
             object item = DataGridMoveList.SelectedItem;
@@ -82,7 +83,7 @@ namespace DataGridBind
         }
 
         // Denne her metode er til Delete knappen. //
-        void Delete(object sender, RoutedEventArgs e)
+        private void Delete(object sender, RoutedEventArgs e)
         {
             object item = DataGridMoveList.SelectedItem;
             string BrugerID = (DataGridMoveList.SelectedCells[0].Column.GetCellContent(item) as TextBlock).Text;
@@ -96,7 +97,7 @@ namespace DataGridBind
         }
 
         // Denne her metode er til Details knappen. //
-        void Details(object sender, RoutedEventArgs e)
+        private void Details(object sender, RoutedEventArgs e)
         {
             object item = DataGridMoveList.SelectedItem;
             string BrugerID = (DataGridMoveList.SelectedCells[0].Column.GetCellContent(item) as TextBlock).Text;
@@ -108,7 +109,7 @@ namespace DataGridBind
         }
 
         // This method is for the Create window. // 
-        void Create(object sender, RoutedEventArgs e)
+        private void Create(object sender, RoutedEventArgs e)
         {
             WPFApp.MovieCreate win3 = new WPFApp.MovieCreate();
             win3.Show();

@@ -30,6 +30,14 @@ namespace WPFApp
             Details_ID.Text = BrugerID;
         }
 
+        public MovieEdit MovieEdit
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         // Denne her metode sender brugeren tilbage til Mainvinduet/hovedvinduet. //
         private void Button_Click(object sender, RoutedEventArgs e)
         {

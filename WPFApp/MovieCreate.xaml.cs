@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
+using System.Data.Sql;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Data.Sql;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Collections.Generic;
+using System.Windows.Media.Imaging;
 
 namespace WPFApp
 {
@@ -47,6 +47,12 @@ namespace WPFApp
             cmd.ExecuteNonQuery();
             MessageBox.Show("Data'en er indsat i databasen!");
             conn.Close();
+
+            Create_Title.Clear();
+            Create_ReleaseDate.Clear();
+            Create_Genre.Clear();
+            Create_Price.Clear();
+            Create_Rating.Clear();
         }
 
         // Denne her metode clear alle, felterne i Create vinduet. //

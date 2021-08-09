@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="WPFApp.App">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFApp.Details" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACABAAIAAAAAAAEAAAQAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Details.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MovieEdit" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.119" Collapsed="true" />
+  </Class>
+  <Class Name="WPFApp.MovieCreate" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAEAAAQAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>MovieCreate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WPFApp.MovieEdit" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAEAAAQAAAAAAACACAAAAAA=</HashCode>
+      <FileName>MovieEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataGridBind.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAABAAAAAAAAAAAAAAUAAEACAACAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WPFApp.Properties.Resources">
+    <Position X="0.5" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFApp.Properties.Settings">
+    <Position X="0.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
